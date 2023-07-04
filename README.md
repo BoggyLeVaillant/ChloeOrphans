@@ -1,221 +1,156 @@
 # Learning to code your first website
 
+[![indonesian](https://img.shields.io/badge/lang-indonesian-red.svg)](README.in.md)
+
 ## Objectives
 
-The goal of this lesson is to learn how to create websites using html, css and javascript. These technologies are the
-basics of coding websites and will be useful to understand how a website works.
+We are going to create our first website in addition of the first page you have created
 
-## The lessons you will have
+You have to create a website that will look like this :
 
-- Learn HTML
-- Learn CSS
-- build your own website
-- Learn JavaScript
+![alt text](./front-page.png)
 
-## Activity
+You can use what ever text, photos, designs and video you want. It just has to look like this page.
 
-### Learn HTML
+## The lesson
 
-HTML, which stands for Hypertext Markup Language, is the standard markup language used for creating and structuring web
-pages. It provides a set of predefined tags or elements that define the structure and content of a webpage.
+Now we are going to follow steps to help you create this page.
 
-HTML documents are composed of a series of elements, each enclosed within opening <tag> and closing </tag> tags. These
-elements can represent various types of content, such as headings, paragraphs, images, links, tables, forms, and more.
+First we have to create a new html file (for example ``first_page.html``)
 
-The structure of an HTML document typically includes:
+After this we are going to create this part, which is called the ``Header``, the head of the page :
 
-```<!DOCTYPE html>``` declaration: This specifies the version of HTML being used, which is HTML5 in modern web development.
+![alt text](./header.png)
 
-```<html>``` element: This serves as the root element and encapsulates the entire HTML document.
+To do this we are going to use ``<div>`` and put the other things in it.
+This ``<div>`` must contain an image like the logo of your page, and that redirects to this page when it is clicked,
+3 links that redirects to The first page you have created, a few weeks ago, to a new page that does not exist for now,
+and the last one must
+open on another web page (like wikipedia for example) but in another window (use target="_blank" to do so).
+The last one is a button that also redirect to a website that you want to.
 
-```<head>``` element: This contains metadata about the webpage, such as the title displayed in the browser's title bar, links to external stylesheets, and other information that is not displayed directly on the page.
+It should look like something like this.
 
-```<body>``` element: This represents the main content area of the webpage and contains all the visible content that users see when they visit the page.
+![alt text](./header-no-css.png)
 
-Within the <body> element, you can use a variety of tags to structure and format the content, create headings and
-paragraphs, insert images, create lists, define tables, and more. HTML also allows you to add hyperlinks to other pages
-or resources and embed multimedia elements such as videos or audio.
-Instructions:
-
-1. Create a new HTML file:
-    - Open a text editor such as Notepad++ or Visual Studio Code.
-    - Create a new blank file.
-    - Save the file with the ".html" extension, for example, "my_website.html".
-2. Basic structure:
-    - Inside the HTML file, add the following basic tags:
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My First Website</title>
-</head>
-<body>
-<!-- Your HTML content will be added here -->
-</body>
-</html>
-```
-
-3. Add content to your page:
-
-Inside the <body> tag, add the following elements:
-
-- A level 1 heading:
-
-```html
-<h1>Welcome to my website!</h1>
-```
-
-- A paragraph of text:
-
-```html
-<p>This is my first website.</p>
-```
-
-- A bulleted list:
+After having created this we need to add design to our header so that it looks like this.
+To do so we are going to create a new file called ``style.css``.
+To use it we are going to call the file in our html file. Add this :
 
 ```html
 
-<ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-</ul>
+<link rel="stylesheet" type="text/css" href="style.css">
 ```
 
-- An image:
-
-```html
-<img src="path/to/image.jpg" alt="My first image">
-```
-
-- A link to another page:
-
-```html
-<a href="path/to/another_page.html">Link to another page</a>
-```
-
-4. Save the file and open it in your browser:
-
-- Save your modifications to the HTML file.
-- Open your web browser (e.g., Google Chrome, Firefox, etc.).
-- Drag the HTML file into the browser window or use the "Open File" option in the browser menu.
-- Verify that your page is displayed correctly with the content you added.
-
-5. Further exploration (optional):
-
-- Try adding more HTML elements to your page, such as lower-level headings (``<h2>``, ``<h3>``, etc...),
-  tables (``<table>``), forms (``<form>``), etc.
-- Experiment with text formatting using tags like ``<strong>``, ``<em>``, ``<u>``, ``<s>``, etc.
-
-#### To understand :
-
-``<html>``: Defines the root of an HTML document.
-
-``<head>``: Contains metadata and other header elements for an HTML document.
-
-``<title>``: Defines the title of the document, displayed in the browser's title bar or tab.
-
-``<body>``: Represents the content of an HTML document.
-
-``<h1>`` to ``<h6>``: Defines six levels of headings, with ``<h1>`` being the highest and ``<h6>`` the lowest.
-
-``<p>``: Represents a paragraph of text.
-
-``<a>``: Creates a hyperlink to another webpage or a specific location within the same document.
-
-``<img>``: Inserts an image into the document.
-
-``<ul>``: Represents an unordered (bulleted) list.
+between the
 
 ````html
 
-<ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-</ul>
+<head></head>
 ````
 
-``<ol>``: Represents an ordered (numbered) list.
+of your html file.
 
-``<li>``: Represents a list item within ``<ul>`` or ``<ol>``.
+That's it. Now we can add design to our page using this file. To try this add to your ``<div>``
+the attribute `id` like this :
 
-``<table>``: Represents tabular data.
+```html
 
-``<tr>``: Defines a row within a table.
+<div id="header">
+```
 
-````html
+for example.
 
-<table>
-    <tr>
-        <td>Cell 1</td>
-        <td>Cell 2</td>
-        <td>Cell 3</td>
-    </tr>
-</table>
-````
+Now, we can use can go in our css file and add this :
 
-``<th>``: Defines a header cell within a table row.
+```css
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+```
 
-````html
+As you can see, we are using ``flexbox`` to modify our page.
+Now we can add a bit more css to add little changes.
 
-<table>
-    <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-        <th>Header 3</th>
-    </tr>
-    <tr>
-        <td>Data 1</td>
-        <td>Data 2</td>
-        <td>Data 3</td>
-    </tr>
-</table>
-````
+```css
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    border-bottom: solid black;
+    font-family: "Times New Roman", Times, serif;
+}
+```
 
-``<td>``: Defines a standard cell within a table row.
+Try each new thing that you understand how it works. If you don't understand what it modifies, ask us.
 
-````html
+After this we are going to add colors and style to our buttons and links. So we
+need to add ``classes`` and ``id`` to our links and button, that they can be modified in the css file.
 
-<table>
-    <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-        <th>Header 3</th>
-    </tr>
-    <tr>
-        <td>Data 1</td>
-        <td>Data 2</td>
-        <td>Data 3</td>
-    </tr>
-</table>
-````
+An ``id`` is unique but a same class can be used for different things. The first 2 links are of our page have
+the same style, so we are going to use our the same class, like this :
 
-``<form>``: Represents an HTML form for user input.
+```html
+<a href="first_page.html" class="link_to_page">My first page</a>
+<a href="form_page.html" class="link_to_page">Form page</a>
+```
 
-``<input>``: Creates an input field within a form.
+And for the button and the last link, they are different and unique, so you can use
+an ``id``.
 
-``<button>``: Creates a clickable button.
+Now go in the css file and add :
+```css
+.link_to_page {
+    color: #3EAC78;
+}
 
-``<textarea>``: Defines a multi-line text input control.
+.link_to_page:hover {
+    color: #1f543b;
+}
+```
 
-``<select>``: Creates a dropdown list.
+This adds color to your links. #3EAC78 is a specific green colour,
+you can choose the colour you want. If you want a specific colour, go on this website :
+https://htmlcolorcodes.com/. Choose the colour that you want and copy the number  after the # sign that should look like this : ``FF5733```
 
-``<option>``: Defines an option within a ``<select>`` element.
+The ```:hover``` adds a propriety that when you pass your mouse on the 
+link, it changes colour. We will use it also for the other links.
 
-``<div>``: Represents a division or section in an HTML document.
+Now, let's modify the rest of the button and link. I have gave my last link (the wikipedia one) the id ``wiki``.
+If we add this css :
 
-````html
+```css
+#header button, #wiki {
+    color: white;
+    background-color: #3EAC78;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+}
 
-<div>
-    <h2>Welcome to my website!</h2>
-    <p>This is a sample paragraph.</p>
-</div>
-````
+#header button:hover, #wiki:hover {
+    color: white;
+    background-color: #1f543b;
+}
+```
 
-``<span>``: Defines a section of text within another element.
+You will the transformation of the header. Try to understand how it works. If 
+you have any question, ask us.
 
-This concludes the TP on Introduction to HTML. I hope this was helpful for you to get started on creating your own
-website! Feel free to explore further and learn more advanced HTML concepts.
+Lastly, for the header, we are going to modify the size of our image and we will add round corners to the last link.
+To do so, add this to your css : 
 
+```css
+#header img {
+    width: 100px;
+}
+
+#wiki {
+    border-radius: 10px;
+}
+```
