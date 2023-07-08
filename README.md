@@ -4,7 +4,7 @@
 
 ## Objectives
 
-We are going to create our first website in addition of the first page you have created
+We are going to create our first website in addition of the first page you have created.
 
 You have to create a website that will look like this :
 
@@ -154,3 +154,40 @@ To do so, add this to your css :
     border-radius: 10px;
 }
 ```
+
+After this we have a big title. This title is a ``h1`` title.
+In the css file, you can add a color to the title if you want, and 
+add many things to want to style it like you want.
+
+And just after this, is a new ``div`` and a paragraph in it, with also a link.
+To this banner, we can add a ``background`` or a ``background-image``if you want (using this image 
+for example ``data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUbSzsVjw6hAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC``).
+You can put any text you want in it. The text as also ``color: white;`` to make the text white.
+
+Now the next section, you should understand how to create it. The first thing is a table like this :
+
+```html
+
+<table>
+    <tr>
+        <th>title1</th>
+        <th>title2</th>
+        <th>title3</th>
+    </tr>
+    <tr>
+        <td>What you want</td>
+        <td>What you want</td>
+        <td>What you want</td>
+    </tr>
+    <tr>
+        <td>What you want</td>
+        <td>What you want</td>
+        <td>What you want</td>
+    </tr>
+</table>
+```
+
+You will have to add the design that you want by yourself. The second 
+thing add is a Youtube video. If it is to much complicated, ask us.
+
+Once you have done all these things you can now modify the first page you have created.

@@ -154,3 +154,40 @@ Untuk melakukannya, tambahkan ini ke css Anda:
     border-radius: 10px;
 }
 ```
+
+Setelah ini kami memiliki judul besar. Judul ini adalah judul ``h1``.
+Di dalam file css, Anda dapat menambahkan warna pada judul jika Anda mau, dan
+menambahkan banyak hal untuk menatanya seperti yang Anda inginkan.
+
+Dan tepat setelah ini, adalah sebuah ``div`` baru dan paragraf di dalamnya, dengan sebuah tautan.
+Pada banner ini, kita dapat menambahkan ``background`` atau ``background-image`` jika Anda menginginkannya (menggunakan gambar ini
+misalnya ``data: image/png; base64,
+Anda dapat meletakkan teks apa pun yang Anda inginkan di dalamnya. Teks tersebut juga dapat diberi ``color: white;`` untuk membuat teks menjadi putih.
+
+Sekarang bagian selanjutnya, Anda harus memahami cara membuatnya. Hal pertama adalah sebuah tabel seperti ini:
+
+```html
+
+<table>
+    <tr>
+        <th>title1</th>
+        <th>title2</th>
+        <th>title3</th>
+    </tr>
+    <tr>
+        <td>What you want</td>
+        <td>What you want</td>
+        <td>What you want</td>
+    </tr>
+    <tr>
+        <td>What you want</td>
+        <td>What you want</td>
+        <td>What you want</td>
+    </tr>
+</table>
+```
+
+Anda harus menambahkan sendiri desain yang Anda inginkan. Yang kedua
+yang kedua adalah menambahkan video Youtube. Jika terlalu rumit, tanyakan kepada kami.
+
+Setelah Anda melakukan semua hal ini, Anda sekarang dapat memodifikasi halaman pertama yang telah Anda buat.
